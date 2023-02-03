@@ -9,10 +9,9 @@ services:
         - "6379:6379"
 
   front-app:
-#    build: ./azure-vote
     image: abdulkhalil/vote-front:v1
     container_name: front-container-app
     environment:
-      REDIS: azure-vote-back
+      REDIS: back-app
     ports:
         - "8080:80"
