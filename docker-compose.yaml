@@ -1,4 +1,5 @@
-version: '3' services: back-app: image: abdulkhalil/vote-back:v1 container_name: 
+version: '3'
+services: back-app: image: abdulkhalil/vote-back:v1 container_name: 
     back-container-app environment:
       ALLOW_EMPTY_PASSWORD: "yes" ports: - "6379:6379" front-app: build: ./azure-vote 
     image: abdulkhalil/vote-front:v1 container_name: front-container-app environment:
