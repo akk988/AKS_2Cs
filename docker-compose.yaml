@@ -9,7 +9,7 @@ services:
         - "6379:6379"
 
   front-app:
-    build: ./azure-vote
+#    build: ./azure-vote
     image: abdulkhalil/vote-front:v1
     container_name: front-container-app
     environment:
